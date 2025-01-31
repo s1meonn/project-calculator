@@ -16,7 +16,7 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Центрираме всичко вътре в калкулатора */
+    align-items: center; 
   }
 
   #result {
@@ -71,4 +71,19 @@ body {
     background-color: #4b0600;
   }
 
+  .display {
+    background-color: black; 
+    color: white; 
+    font-size: 36px; 
+    text-align: right; 
+    border: none; 
+    padding: 12px ;
+    width: 90%;
+    border-radius: 5px;
+    grid-column: span 4; 
+    height: 74px; 
+    align-self: center; 
+    margin-bottom: 20px;
+  }
+  
   

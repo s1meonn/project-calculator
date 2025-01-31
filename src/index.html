@@ -6,42 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title> 
   <style>
-   
+    
   </style>
 </head>
 <body>
+  <div id="display"></div>
   <div id="calculator">
+
     <!-- Поле за резултата -->
-    <input type="text" id="result" disabled>
+    <label for="result"> </label>
+    <input type="text" class="display" readonly>
 
     <!-- Бутоните на калкулатора -->
     <div class="buttons">
-      <button class="clear">C</button>
-      <button class="operator">⌫</button>
-      <button class="operator">%</button>
-      <button class="operator">÷</button>
-
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
+      <button class="clear" aria-label="Clear">C</button>
+      <button class="operator" aria-label ="Backspace">⌫</button>
+      <button class="operator" aria-label ="Precentage">%</button>
+      <button class="operator" aria-label ="Divide">÷</button>
+      
+      <button class="button number" aria-label="seven">7</button>
+      <button class="button number" aria-label="eight">8</button>
+      <button class="button number" aria-label="nine">9</button>
       <button class="operator">x</button>
-
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
+      
+      <button class="button number" aria-label="four">4</button>
+      <button class="button number" aria-label="five">5</button>
+      <button class="button number" aria-label="six">6</button>
       <button class="operator">-</button>
-
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
+      
+      <button class="button number" aria-label="one">1</button>
+      <button class="button number" aria-label="two">2</button>
+      <button class="button number" aria-label="three">3</button>
       <button class="operator">+</button>
-
-      <button>0</button>
-      <button>.</button>
+      
       <button></button>
+      <button class="button number" aria-label="zero">0</button>
+      <button class="operator" aral-label ="point">.</button>
       <button class="operator">=</button>
     </div>
   </div>
+
+  <script src="../dist/scripts/calculator.js" type="module"></script>
+
 </body>
 </html>
 
